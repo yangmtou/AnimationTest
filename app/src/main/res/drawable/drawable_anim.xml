@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item android:drawable="@drawable/hw_device_guid_omron9200_img_1"
+        android:duration="500"/>
+    <item android:drawable="@drawable/hw_device_guid_omron9200_img_2"
+        android:duration="500"/>
+    <item android:drawable="@drawable/hw_device_guid_omron9200_img_3"
+        android:duration="500"/>
+    <item android:drawable="@drawable/hw_device_guid_omron9200_img_4"
+        android:duration="500"/>
+    <item android:drawable="@drawable/hw_device_kangkang_ccpba01_measure_guide_1"
+        android:duration="500"/>
+    <item android:drawable="@drawable/hw_device_kangkang_ccpba01_measure_guide_2"
+        android:duration="500"/>
+    <item android:drawable="@drawable/hw_device_kangkang_ccpba01_measure_guide_3"
+        android:duration="500"/>
+    <item android:drawable="@drawable/hw_device_kangkang_ccpba01_measure_guide_4"
+        android:duration="500"/>
+</animation-list>
