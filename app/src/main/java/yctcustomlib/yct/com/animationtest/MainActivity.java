@@ -6,7 +6,11 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //不适用xml资源文件，完全在代码中实现的方式和逻辑
-        AnimationDrawable animationDrawable = new AnimationDrawable();
+        /*AnimationDrawable animationDrawable = new AnimationDrawable();
         for (int i = 1; i <= 4; i++) {
             int id = getResources().getIdentifier("hw_device_guid_omron9200_img_"+i,"drawable",getPackageName());
             Drawable drawable = getDrawable(id);
@@ -38,6 +42,35 @@ public class MainActivity extends AppCompatActivity {
         imageView.setBackground(animationDrawable);
         animationDrawable.setOneShot(false);
         AnimationDrawable animationDrawableFromBG = (AnimationDrawable) imageView.getDrawable();
-        animationDrawable.start();
+        animationDrawable.start();*/
+
+        //补间动画---旋转（rotate）xml资源文件
+        /*Animation animation = AnimationUtils.loadAnimation(this,R.anim.rotate_anim);
+        animation.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+                Toast.makeText(MainActivity.this,"start",Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                Toast.makeText(MainActivity.this,"end",Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
+        imageView.startAnimation(animation);*/
+
+        //补间动画---旋转（rotate）代码实现
+        /*RotateAnimation rotateAnimation = new RotateAnimation(0,360);
+        rotateAnimation.setDuration(1000);
+        rotateAnimation.setFillAfter(true);
+        imageView.startAnimation(rotateAnimation);*/
+
+
     }
 }
